@@ -3,4 +3,6 @@ source 'https://rubygems.org'
 
 gem 'rake'
 
-gem 'iconv'
+if RUBY_PLATFORM != 'java'
+  gem 'iconv'
+end
